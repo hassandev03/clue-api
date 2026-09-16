@@ -2,8 +2,10 @@
 Controller for the Alan Wake Clue API.
 This module provides functions to manage the storage of clues.
 """
+
 import json
 from alan_wake_clue_api.clue import Clue
+
 
 class ClueController:
     """Static controller handling business logic and JSON operations."""
@@ -17,11 +19,11 @@ class ClueController:
         title: str,
         description: str,
         case_id: str,
-        chapter: int|None = None,
-        location: str|None = None,
+        chapter: int | None = None,
+        location: str | None = None,
         clue_type: str = "case_fact",
         discovered: bool = False,
-        media_url: str|None = None,
+        media_url: str | None = None,
     ) -> str:
         """Creates a clue, adds it to the central store, and returns it as JSON."""
         new_clue = Clue(
