@@ -5,12 +5,10 @@ This module provides functions to manage the storage of clues.
 
 import json
 
-try:
-    from alan_wake_clue_api.clue import Clue
-    from alan_wake_clue_api.clue_db import ClueDB
-except ImportError:
-    from clue import Clue
-    from clue_db import ClueDB
+
+from clue import Clue
+from clue_db import ClueDB
+
 
 class ClueController:
     """Static controller handling business logic and JSON operations."""
@@ -44,7 +42,9 @@ class ClueController:
         return json.dumps(new_clue.to_dict(), indent=2)
 
     @classmethod
-    def get_all_clues(cls,) -> str:
+    def get_all_clues(
+        cls,
+    ) -> str:
         """Serializes all central clues into a JSON array."""
         clues = cls._clue_database
 

@@ -20,11 +20,11 @@ class Clue:
         title: str,
         description: str,
         case_id: str,
-        chapter: int|None = None,
-        location: str|None  = None,
+        chapter: int | None = None,
+        location: str | None = None,
         clue_type: str = "case_fact",
         discovered: bool = False,
-        media_url: str|None  = None,
+        media_url: str | None = None,
     ):
         if not (1 <= len(title) <= 120):
             raise ValueError("Title must be between 1 and 120 characters.")
