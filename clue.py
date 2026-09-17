@@ -19,7 +19,6 @@ class Clue:
         self,
         title: str,
         description: str,
-        case_id: str,
         chapter: int | None = None,
         location: str | None = None,
         clue_type: str = "case_fact",
@@ -40,7 +39,6 @@ class Clue:
         # Content fields
         self.title = title
         self.description = description
-        self.case_id = case_id
         self.chapter = chapter
         self.location = location
         self.clue_type = clue_type
@@ -53,7 +51,6 @@ class Clue:
             "id": self.id,
             "title": self.title,
             "description": self.description,
-            "case_id": self.case_id,
             "chapter": self.chapter,
             "location": self.location,
             "clue_type": self.clue_type,

@@ -20,7 +20,6 @@ class ClueController:
         cls,
         title: str,
         description: str,
-        case_id: str,
         chapter: int | None = None,
         location: str | None = None,
         clue_type: str = "case_fact",
@@ -31,7 +30,6 @@ class ClueController:
         new_clue = Clue(
             title=title,
             description=description,
-            case_id=case_id,
             chapter=chapter,
             location=location,
             clue_type=clue_type,
@@ -58,6 +56,9 @@ class ClueController:
             if clue.id == clue_id:
                 return json.dumps(clue.to_dict(), indent=2)
         return json.dumps({"error": "Clue not found"}, indent=2)
+    
+    @classmethod
+    
 
     @classmethod
     def clear_database(cls) -> None:

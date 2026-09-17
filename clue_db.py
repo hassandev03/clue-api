@@ -1,3 +1,4 @@
+
 from clue import Clue
 
 
@@ -6,7 +7,6 @@ class ClueDB:
         Clue(
             title="Victim Identified as Robert Nightingale",
             description="Former FBI Agent Robert Nightingale disappeared 13 years ago in Bright Falls. His corpse washed up at the Cauldron Lake murder site.",
-            case_id="murder_at_cauldron_lake",
             chapter=1,
             location="Cauldron Lake",
             clue_type="case_fact",
@@ -16,7 +16,6 @@ class ClueDB:
         Clue(
             title="Heart Missing from Torso",
             description="The victim's chest cavity was cut open along the sternum with surgical precision. The heart was cleanly removed prior to submersion.",
-            case_id="murder_at_cauldron_lake",
             chapter=1,
             location="Cauldron Lake",
             clue_type="case_fact",
@@ -26,7 +25,6 @@ class ClueDB:
         Clue(
             title="Cult Tracks Leading from Lake",
             description="Multiple boot prints and deer mask imprints found near the shoreline leading up toward the General Store and Witch's Ladle.",
-            case_id="murder_at_cauldron_lake",
             chapter=1,
             location="Cauldron Lake",
             clue_type="case_fact",
@@ -36,7 +34,6 @@ class ClueDB:
         Clue(
             title="Manuscript Page Inside Nightingale's Heart Cavity",
             description="During the autopsy in the Bright Falls morgue, a folded manuscript page titled Return was discovered lodged in the empty thoracic cavity.",
-            case_id="murder_at_cauldron_lake",
             chapter=2,
             location="Bright Falls",
             clue_type="manuscript_page",
@@ -46,7 +43,6 @@ class ClueDB:
         Clue(
             title="The Resurrected Nightingale",
             description="Nightingale reanimated on the autopsy slab as a Taken, overpowered Deputy Mulligan, and retreated through an Overlap back to Cauldron Lake.",
-            case_id="murder_at_cauldron_lake",
             chapter=2,
             location="Bright Falls",
             clue_type="case_fact",
@@ -56,7 +52,6 @@ class ClueDB:
         Clue(
             title="Witch's Hut Fuse Box",
             description="Restoring the fuse to the Witch's Hut illuminated the cabin, turning it into a safe haven of light protected from the Darkness.",
-            case_id="murder_at_cauldron_lake",
             chapter=2,
             location="Cauldron Lake",
             clue_type="case_fact",
@@ -66,7 +61,6 @@ class ClueDB:
         Clue(
             title="Nightingale's Heart at the General Store",
             description="Found Nightingale's excised heart stored inside an old refrigerator inside the abandoned Cauldron Lake General Store.",
-            case_id="murder_at_cauldron_lake",
             chapter=2,
             location="Cauldron Lake",
             clue_type="case_fact",
@@ -76,7 +70,6 @@ class ClueDB:
         Clue(
             title="Witch's Sign Overlap Ritual",
             description="Inserting Nightingale's heart into the Witch's sign fulfilled the poetic conditions required to open the Overlap into the Dark Place.",
-            case_id="murder_at_cauldron_lake",
             chapter=2,
             location="Cauldron Lake",
             clue_type="case_fact",
@@ -86,7 +79,6 @@ class ClueDB:
         Clue(
             title="Cult Symbol - Interlocking Triangles",
             description="Two downward-pointing wooden triangles joined together, painted in red or carved into tree trunks to mark cult territory and supply stashes.",
-            case_id="cult_of_the_tree",
             chapter=1,
             location="Cauldron Lake",
             clue_type="case_fact",
@@ -96,7 +88,6 @@ class ClueDB:
         Clue(
             title="Cult Stash near the Murder Site",
             description="A locked lockbox secured with a combination lock matching symbols found painted on the surrounding yellow-marked trees.",
-            case_id="cult_of_the_tree",
             chapter=1,
             location="Cauldron Lake",
             clue_type="cult_stash",
@@ -106,7 +97,6 @@ class ClueDB:
         Clue(
             title="Coffee World Cult Workshop",
             description="Workshop behind the Huotari Well containing woodworking equipment, carved wooden deer masks, and stockpiled flashbangs.",
-            case_id="cult_of_the_tree",
             chapter=3,
             location="Watery",
             clue_type="cult_stash",
@@ -116,7 +106,6 @@ class ClueDB:
         Clue(
             title="Koskela Brothers Cult Affiliation",
             description="Ilmo and Jaakko Koskela founded the Cult of the Tree not to summon darkness, but as an armed vigilante group defending Bright Falls and Watery from Taken monsters.",
-            case_id="cult_of_the_tree",
             chapter=3,
             location="Watery",
             clue_type="profile",
@@ -126,7 +115,6 @@ class ClueDB:
         Clue(
             title="Cult Stash at Downtown Watery Docks",
             description="A stash box hidden under the pier sheds in Watery requiring math puzzles based on tide levels to unlock.",
-            case_id="cult_of_the_tree",
             chapter=3,
             location="Watery",
             clue_type="cult_stash",
@@ -136,7 +124,6 @@ class ClueDB:
         Clue(
             title="Cult Note on the Torch Bearers",
             description="Handwritten logs identifying cult members patrolling the perimeter of the bunker with high-candela hunting lights.",
-            case_id="cult_of_the_tree",
             chapter=5,
             location="Bright Falls",
             clue_type="case_fact",
@@ -146,7 +133,6 @@ class ClueDB:
         Clue(
             title="Manuscript Page: Saga Finds the First Page",
             description="A page from Return describing Saga Anderson discovering this exact page on the ground beside the fence at Cauldron Lake.",
-            case_id="the_story",
             chapter=1,
             location="Cauldron Lake",
             clue_type="manuscript_page",
@@ -156,7 +142,6 @@ class ClueDB:
         Clue(
             title="Manuscript Page: The Murder at Cauldron Lake",
             description="Alan Wake's manuscript detailing Nightingale emerging from the lake as a Taken, carrying the darkness within him.",
-            case_id="the_story",
             chapter=1,
             location="Cauldron Lake",
             clue_type="manuscript_page",
@@ -166,7 +151,6 @@ class ClueDB:
         Clue(
             title="Manuscript Page: Saga Investigates the Morgue",
             description="Page foretelling the power outage in the morgue and Nightingale's violent rampage through the basement.",
-            case_id="the_story",
             chapter=2,
             location="Bright Falls",
             clue_type="manuscript_page",
@@ -176,7 +160,6 @@ class ClueDB:
         Clue(
             title="Manuscript Page: Saga Pursues Nightingale",
             description="Describes Saga entering the Overlap at the flooded shore, navigating the looping forest while hunting Nightingale.",
-            case_id="the_story",
             chapter=2,
             location="Cauldron Lake",
             clue_type="manuscript_page",
@@ -186,7 +169,6 @@ class ClueDB:
         Clue(
             title="Manuscript Page: Deputies Corrupted",
             description="Details Deputy Mulligan and Deputy Thornton falling prey to paranoia and the influence of the Dark Presence at Coffee World.",
-            case_id="the_story",
             chapter=3,
             location="Watery",
             clue_type="manuscript_page",
@@ -196,7 +178,6 @@ class ClueDB:
         Clue(
             title="Manuscript Page: Scratch Behind the Glass",
             description="Describes the malevolent entity Scratch breaking through the interrogation room glass at the sheriff's station.",
-            case_id="the_story",
             chapter=6,
             location="Bright Falls",
             clue_type="manuscript_page",
@@ -206,7 +187,6 @@ class ClueDB:
         Clue(
             title="Streamside Nursery Rhyme",
             description="A chalk drawing of a sun and tree with a poem about a mother bird protecting her chicks. Placing the bird doll solves the riddle.",
-            case_id="nursery_rhymes_investigation",
             chapter=2,
             location="Cauldron Lake",
             clue_type="nursery_rhyme",
@@ -216,7 +196,6 @@ class ClueDB:
         Clue(
             title="Coffee World Fairground Nursery Rhyme",
             description="Rhyme chalked near the Latte Lagoon depicting a monstrous beast and a deer mother; rewarding a Coffee Mug Charm upon completion.",
-            case_id="nursery_rhymes_investigation",
             chapter=3,
             location="Watery",
             clue_type="nursery_rhyme",
@@ -226,7 +205,6 @@ class ClueDB:
         Clue(
             title="Ranger Cabin Nursery Rhyme",
             description="Chalk drawing outside Bunker Woods Ranger Cabin featuring a serpent and hero doll setup.",
-            case_id="nursery_rhymes_investigation",
             chapter=5,
             location="Bright Falls",
             clue_type="nursery_rhyme",
@@ -236,7 +214,6 @@ class ClueDB:
         Clue(
             title="FBC Mobile Lab Assessment of Rhymes",
             description="Federal Bureau of Control research station notes confirming nursery rhymes test local reality alterations produced by the lake.",
-            case_id="nursery_rhymes_investigation",
             chapter=2,
             location="Cauldron Lake",
             clue_type="case_fact",
@@ -246,7 +223,6 @@ class ClueDB:
         Clue(
             title="Profile: Saga Anderson",
             description="FBI Special Agent gifted with uncanny intuition and Mind Place profiling capability, investigating serial murders in Bright Falls.",
-            case_id="profiling_suspects",
             chapter=1,
             location="Cauldron Lake",
             clue_type="profile",
@@ -256,7 +232,6 @@ class ClueDB:
         Clue(
             title="Profile: The Koskela Brothers",
             description="Saga profiles Ilmo Koskela: entrepreneurial, fiercely loyal to Watery, determined to protect his community from supernatural horror.",
-            case_id="profiling_suspects",
             chapter=3,
             location="Watery",
             clue_type="profile",
@@ -266,7 +241,6 @@ class ClueDB:
         Clue(
             title="Profile: Alan Wake",
             description="Saga profiles Alan Wake washed ashore: desperate to escape the Dark Place, haunted by his doppelganger, frantically writing Return.",
-            case_id="profiling_suspects",
             chapter=2,
             location="Cauldron Lake",
             clue_type="profile",
@@ -276,7 +250,6 @@ class ClueDB:
         Clue(
             title="Profile: Tor and Odin Anderson",
             description="Old Gods of Asgard rockstars who understand the threshold between worlds through moonshine brewed with Cauldron Lake water.",
-            case_id="profiling_suspects",
             chapter=5,
             location="Bright Falls",
             clue_type="profile",
@@ -286,7 +259,6 @@ class ClueDB:
         Clue(
             title="Bright Falls Community and Deerfest",
             description="Bright Falls annual Deerfest celebration preparing to crown the Deer Fest king while darkness creeps into the town.",
-            case_id="bright_falls_incident_2010",
             chapter=1,
             location="Bright Falls",
             clue_type="case_fact",
@@ -296,7 +268,6 @@ class ClueDB:
         Clue(
             title="Echo: Alex Casey in Caldera Alley",
             description="A psychic echo aligned in the alleyway showing detective Alex Casey investigating a ritual murder connected to a dark novel.",
-            case_id="initiation_dark_place",
             chapter=2,
             location="The Dark Place",
             clue_type="echo",
@@ -306,7 +277,6 @@ class ClueDB:
         Clue(
             title="Echo: Oceanview Hotel Room 665",
             description="An echo of Thomas Zane and Alan Wake discussing devil's pacts, film reels, and the ritual behind the door of Room 665.",
-            case_id="initiation_dark_place",
             chapter=5,
             location="The Dark Place",
             clue_type="echo",
@@ -316,7 +286,6 @@ class ClueDB:
         Clue(
             title="Echo: Poet's Cinema Grand Ballroom",
             description="An echo revealing the premiere of Thomas Zane's film Tom the Poet and the descent of the cultists into madness.",
-            case_id="initiation_dark_place",
             chapter=8,
             location="The Dark Place",
             clue_type="echo",
@@ -326,7 +295,6 @@ class ClueDB:
         Clue(
             title="The Angel Lamp",
             description="A brass lamp shaped like an angel gifted by Thomas Zane, capable of capturing and transferring light sources to alter reality.",
-            case_id="initiation_dark_place",
             chapter=1,
             location="The Dark Place",
             clue_type="case_fact",
@@ -336,7 +304,6 @@ class ClueDB:
         Clue(
             title="The Writer's Room Plot Board",
             description="Alan Wake's blackboard where plot elements and scenes are rewritten to open paths through the dreamscape of New York.",
-            case_id="initiation_dark_place",
             chapter=2,
             location="The Dark Place",
             clue_type="case_fact",
@@ -346,7 +313,6 @@ class ClueDB:
         Clue(
             title="The Clicker",
             description="The severed light switch switch-box from Alan's childhood lamp, imbued with reality-warping power by the Dark Presence.",
-            case_id="bright_falls_incident_2010",
             chapter=6,
             location="Bright Falls",
             clue_type="other",
@@ -356,7 +322,6 @@ class ClueDB:
         Clue(
             title="Disappearance of Alice Wake at Bird Leg Cabin",
             description="Alice Wake vanished into Cauldron Lake in August 2010 after Bird Leg Cabin was pulled beneath the dark waters.",
-            case_id="bright_falls_incident_2010",
             chapter=1,
             location="Cauldron Lake",
             clue_type="case_fact",
@@ -366,7 +331,6 @@ class ClueDB:
         Clue(
             title="Alan Wake Remastered Manuscript Pages",
             description="Pages scattered across Washington state recounting events that haven't occurred yet, typed on an old typewriter.",
-            case_id="bright_falls_incident_2010",
             chapter=5,
             location="Bright Falls",
             clue_type="profile",
@@ -376,7 +340,6 @@ class ClueDB:
         Clue(
             title="Oh Deer Diner Investigation",
             description="The social center of Bright Falls where Rose Marigold served coffee and where Alan first received the key to Bird Leg Cabin.",
-            case_id="bright_falls_incident_2010",
             chapter=1,
             location="Bright Falls",
             clue_type="case_fact",
@@ -386,7 +349,6 @@ class ClueDB:
         Clue(
             title="Manuscript Page: Departure - The Dark Presence Approaches",
             description="Alan's original manuscript page from Departure describing Barbara Jagger taking the guise of an old woman in black veil.",
-            case_id="bright_falls_incident_2010",
             chapter=1,
             location="Cauldron Lake",
             clue_type="manuscript_page",
@@ -396,7 +358,6 @@ class ClueDB:
         Clue(
             title="FBC Containment at Cauldron Lake (AWE)",
             description="The Federal Bureau of Control designated Cauldron Lake as an Altered World Event (AWE-35) following the 2010 incident.",
-            case_id="bright_falls_incident_2010",
             chapter=1,
             location="Cauldron Lake",
             clue_type="case_fact",
@@ -404,3 +365,4 @@ class ClueDB:
             media_url="https://www.alanwake.com/wp-content/uploads/2024/10/AW2_TLH_DET_4K_14-10-24_012-900x600.jpg",
         ),
     ]
+

@@ -1,5 +1,6 @@
 from fastapi import FastAPI, Response
 
+
 from controller import ClueController
 
 clue_app = FastAPI(

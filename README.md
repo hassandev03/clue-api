@@ -21,7 +21,6 @@ Every clue is represented by the same set of fields.
 | `id`            | string    | Server-assigned  | —              | Unique identifier. Read-only; generated on create and never changes.                          |
 | `title`         | string    | **Yes**          | —              | Short display name, as it appears on the Case Board card. 1–120 characters.                   |
 | `description`   | string    | **Yes**          | —              | The full text of the clue as the player reads it. May be long.                                |
-| `case_id`       | string    | **Yes**          | —              | Identifier of the case this clue belongs to. Groups clues onto a single Case Board.           |
 | `chapter`       | integer   | No               | —              | Which chapter of the story the clue is found in. Used for progression ordering.               |
 | `location`      | string    | No               | —              | Where the clue was found. See [locations](#locations).                                        |
 | `clue_type`     | string    | No               | `"case_fact"`  | Category of the clue. See [clue types](#clue-types).                                          |
@@ -65,7 +64,6 @@ Every clue is represented by the same set of fields.
 | `PUT`    | `/clues/{clue_id}`       | Replace a clue                   |
 | `PATCH`  | `/clues/{clue_id}`       | Partially update a clue          |
 | `DELETE` | `/clues/{clue_id}`       | Delete a clue                    |
-| `GET`    | `/cases/{case_id}/clues` | List the clues belonging to a case |
 
 ---
 
