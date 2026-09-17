@@ -1,4 +1,7 @@
-from alan_wake_clue_api.clue import Clue
+try:
+    from alan_wake_clue_api.clue import Clue
+except ImportError:
+    from clue import Clue
 
 
 class ClueDB:

@@ -4,14 +4,18 @@ This module provides functions to manage the storage of clues.
 """
 
 import json
-from alan_wake_clue_api.clue import Clue
 
+try:
+    from alan_wake_clue_api.clue import Clue
+    from alan_wake_clue_api.clue_db import ClueDB
+except ImportError:
+    from clue import Clue
+    from clue_db import ClueDB
 
 class ClueController:
     """Static controller handling business logic and JSON operations."""
 
-    # Central Data Point: holds all clues in memory across the entire system
-    _clue_database: list[Clue] = []
+    _clue_database: list[Clue] = ClueDB.clues
 
     @classmethod
     def add_clue(
@@ -40,17 +44,15 @@ class ClueController:
         return json.dumps(new_clue.to_dict(), indent=2)
 
     @classmethod
-    def get_all_clues_json(cls, case_id: str) -> str:
-        """Serializes all central clues (or filtered by case_id) into a JSON array."""
+    def get_all_clues(cls,) -> str:
+        """Serializes all central clues into a JSON array."""
         clues = cls._clue_database
-        if case_id:
-            clues = [clue for clue in clues if clue.case_id == case_id]
 
         data = [clue.to_dict() for clue in clues]
         return json.dumps(data, indent=2)
 
     @classmethod
-    def get_clue_by_id_json(cls, clue_id: str) -> str:
+    def get_clue_by_id(cls, clue_id: str) -> str:
         """Finds a specific clue by ID and returns its JSON representation."""
         for clue in cls._clue_database:
             if clue.id == clue_id:
